@@ -396,5 +396,103 @@
 		<h3>Authorised by Roderick J. Young — contact: mailto:roderickjy@gmail.com — Hamilton.</h3>
     </footer>
   </article>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STV in Hamilton West Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+    }
+    .highlight {
+      background: #eaf7ea;
+      padding: 0.5rem;
+      border-left: 4px solid #2ecc71;
+      margin: 1rem 0;
+    }
+    ol, ul {
+      margin-left: 1.5rem;
+    }
+    .emoji {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How STV Works: Hamilton West Example</h1>
+
+  <p>Let's walk through how <strong>STV (Single Transferable Vote)</strong> would work in your <strong>Hamilton West</strong> example with <strong>16 candidates</strong> competing for <strong>6 seats</strong> and only <strong>100 voters</strong>.</p>
+
+  <h2>1. The Quota</h2>
+
+  <p>STV uses the <strong>Droop quota</strong> formula:</p>
+
+  <pre><code>Quota = ⌊ Total Valid Votes / (Seats + 1) ⌋ + 1</code></pre>
+
+  <p>Here:</p>
+  <ul>
+    <li>Total valid votes = 100</li>
+    <li>Seats = 6</li>
+  </ul>
+
+  <p>So:</p>
+  <pre><code>Quota = ⌊ 100 / 7 ⌋ + 1 = ⌊ 14.28 ⌋ + 1 = 15</code></pre>
+
+  <div class="highlight">
+    <span class="emoji">👉</span> <strong>So, a candidate needs 15 votes to be elected.</strong>
+  </div>
+
+  <h2>2. First Preferences</h2>
+  <ul>
+    <li>All 100 voters rank the 16 candidates.</li>
+    <li>First preferences are counted.</li>
+    <li>Any candidate with 15 or more first-choice votes is immediately elected.</li>
+  </ul>
+
+  <h2>3. Surplus Transfers</h2>
+  <ul>
+    <li>If a candidate has more than 15 votes (say 20), the surplus (5 votes) is redistributed to the next preferences of those 20 ballots.</li>
+    <li>Redistribution is done <strong>proportionally</strong>: each of the 20 ballots transfers at a fraction of its value (5 ÷ 20 = 0.25 of a vote each).</li>
+  </ul>
+
+  <h2>4. Eliminations</h2>
+  <ul>
+    <li>If after surpluses are transferred, fewer than 6 candidates have reached quota, the candidate with the fewest votes is eliminated.</li>
+    <li>Their ballots are transferred to the next preference still in the race.</li>
+    <li>This process repeats (surpluses redistributed, lowest eliminated) until 6 candidates have reached the quota.</li>
+  </ul>
+
+  <h2>5. Small Numbers Effect</h2>
+  <p>Because only 100 people are voting:</p>
+  <ul>
+    <li>The quota is low (15 votes), so a well-organised campaign could secure a seat with the support of just 15% of voters.</li>
+    <li>With 16 candidates, it’s very likely many will be eliminated early because they’ll get only 1–4 votes.</li>
+    <li>Preferences become crucial — if your supporters rank you 1st but also give good 2nd and 3rd preferences, you stay in the count longer.</li>
+  </ul>
+
+  <h2>6. Example Outcome (Illustrative Only)</h2>
+  <ul>
+    <li>Suppose candidates A, B, and C each get 20 votes. They’re all elected (with surplus transferred).</li>
+    <li>Candidates D and E get 16 and 15 votes — also elected.</li>
+    <li>Now 5 seats are filled.</li>
+    <li>The remaining 11 candidates share 29 votes. The weakest are eliminated until one last candidate passes quota.</li>
+  </ul>
+
+  <div class="highlight">
+    ✅ <strong>Bottom line:</strong> In Hamilton West with 100 voters, 16 candidates, and 6 seats, the winning threshold is 15 votes. Success depends not just on first preferences but on building broad support through lower-order rankings, since eliminated candidates’ votes can decide the final seat.
+  </div>
 </body>
 </html>
