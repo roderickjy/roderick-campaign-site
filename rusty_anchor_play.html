@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rusty Anchor: Rates, Copies, and Common Sense</title>
+  <style>
+    :root{
+      --bg:#0e0f12;
+      --card:#15171c;
+      --ink:#e8ecf1;
+      --muted:#a8b3c1;
+      --accent:#5fd1b9;
+      --rule:#273043;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:900px;margin:auto;padding:clamp(16px,4vw,32px)}
+    header{margin-bottom:1rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    h1{font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.2;margin:0}
+    .tagline{color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:clamp(14px,2.6vw,22px);box-shadow:0 8px 24px rgba(0,0,0,.25);}
+    .meta, .scene, .aside{color:var(--muted)}
+    .scene{
+      border-left:4px solid var(--accent);
+      padding-left:.9rem;
+      margin:1rem 0 1.25rem;
+    }
+    .hr{height:1px;background:linear-gradient(90deg,transparent,var(--rule),transparent);margin:1.25rem 0}
+    .cast{list-style:none;padding:0;margin:.25rem 0 0;display:grid;gap:.35rem}
+    .cast li{padding:.35rem .6rem;background:#101217;border:1px solid var(--rule);border-radius:10px}
+    .dialogue{display:grid;grid-template-columns: minmax(110px,170px) 1fr;gap:.6rem 1rem;align-items:start}
+    .name{font-weight:700;white-space:nowrap}
+    .line{margin:0}
+    .poem .line{font-style:italic}
+    .pledges li{margin:.35rem 0}
+    .chip{display:inline-block;padding:.2rem .55rem;border:1px solid var(--rule);border-radius:999px;color:var(--muted);font-size:.9rem}
+    footer{color:var(--muted);margin-top:2rem;text-align:center;font-size:.95rem}
+    @media (max-width:640px){
+      .dialogue{grid-template-columns:1fr}
+      .name::after{content:":";margin-left:.25rem;color:var(--muted)}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>The Rusty Anchor: Rates, Copies, and Common Sense</h1>
+      <div class="tagline">A kōrero in Shakespeare’s cloak with a Billy T wink—five old boarding-school mates debating policy over pints.</div>
+    </header>
+
+    <section class="card">
+      <h2>Dramatis Personae <span class="chip">IQs evenly spaced (+16)</span></h2>
+      <ul class="cast">
+        <li><strong>Mick (IQ 86)</strong> — straight shooter; bowls on Saturdays; calls a rort a rort.</li>
+        <li><strong>Frank (IQ 108.5)</strong> — community garden treasurer; loves lists and receipts.</li>
+        <li><strong>Don (IQ 131)</strong> — ex-council clerk; keeps a ledger and a long memory.</li>
+        <li><strong>Ruru (IQ 153.5)</strong> — cryptic-crossword setter; quotes the Bard; vapes mango like a fog machine.</li>
+        <li><strong>Kahu (IQ 176)</strong> — professor emeritus of urban policy; carries a thermos of Earl Grey and a pocket flowchart.</li>
+      </ul>
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="card">
+      <div class="scene"><strong>Scene:</strong> The Rusty Anchor Pub, late arvo. The jukebox hums Crowded House; pint glasses clink; a faded Chamber poster flaps on the noticeboard. The Chamber picked only 4 of 12 candidates for the big stage, and a leaked memo says 1400 council staff must vote for 14 of 51 councillors—or risk their jobs. The mates lean in: tonight’s topic has shifted—rates shock for an old lady by the lake, and a young fella chasing a photocopy before five.</div>
+
+      <div class="dialogue">
+        <div class="name">Mick</div>
+        <p class="line">Right then, lads—new circus, same clowns. One of those chosen four gets asked about the old lady by the lake—eighteen grand in rates already, facing double then triple—and he says no to letting her tick it up against her multi-million dollar house. Later over a cuppa: “Didn’t hear the question.” Pull the other one; it’s got bells.</p>
+
+        <div class="name">Frank</div>
+        <p class="line">Column A: Human—answers the question, offers hardship help, explains the forms. Column B: Not Human—talks in circles, then claims “didn’t hear it.” I’ve got biro ticks, see? The poor auntie’s cash-poor, house-rich. Let her postpone the rates with a charge on the title. She pays when the place sells. Boom. Tea?</p>
+
+        <div class="name">Don</div>
+        <p class="line">In my day we ran rates postponement for hardship. Not perfect, but humane. If thou canst manage a ledger, thou canst manage compassion: — clear criteria, — interest capped, — annual review, — no surprises. What we’ve got now is a stage and a shrug.</p>
+
+        <div class="name">Ruru</div>
+        <p class="line poem">“More matter, with less art.” To spurn a widow’s plea beside the lake, then plead the ear was stopped?—Nay, sir, thy mouth was. A statesman hears the quietest pocket rustle.</p>
+
+        <div class="name">Kahu</div>
+        <p class="line">Policy pass one: Property-rich, income-poor—allow postponement with a transparent interest rate, a statutory charge, and a plain-English letter. Policy pass two: Automatic screening—when a bill crosses (say) 10% of household income, trigger outreach. Metrics: fewer arrears, fewer emergency calls, happier auditors.</p>
+      </div>
+
+      <p class="aside scene">A draught rattles the Chamber poster. The barmaid eyes the tape.</p>
+
+      <div class="dialogue">
+        <div class="name">Mick</div>
+        <p class="line">And while we’re at it—our young bloke needs a photocopy of his job application before five. Library barricades say “no card, no copies.” Lotto-shop copier’s cactus. He tries WINZ; front counter says “not here,” but the manager goes, “Sweet, do it now.” See? One person with ears on. He got the job, aye?</p>
+
+        <div class="name">Frank</div>
+        <p class="line">Exactly. Bureaucracy shouldn’t be a brick wall; it should be Lego. Pop-up access: pay-per-copy kiosk with coins, tap-to-pay, or voucher. Emergency rule: one-off free copy for job-seekers—log it, done. I’ve drawn a star by “common sense.”</p>
+
+        <div class="name">Don</div>
+        <p class="line">Libraries used to be the front door of opportunity: copy, scan, send, no song and dance. Set a simple policy: — ID optional for printing; — standard fee; — hardship voucher via desk if clock’s ticking. Stamp it, ledger it, next customer.</p>
+
+        <div class="name">Ruru</div>
+        <p class="line poem">“Hands off thy hurdles, good sirs,” say I. For what is hope but ink upon a page, writ twice, stapled neat, and filed by five?</p>
+
+        <div class="name">Kahu</div>
+        <p class="line">Micro-policy kit: 1) Access tiers: member, visitor, hardship—same machines, different price points. 2) Manager override button: ten seconds to yes. 3) Outcome log: “copy → application → interview → job.” Evidence converts kindness into policy.</p>
+      </div>
+
+      <p class="aside scene">A bloke at the next table mutters, “Should run the city, you lot.” The jukebox skips; Crowded House mercifully resumes.</p>
+
+      <div class="dialogue">
+        <div class="name">Mick</div>
+        <p class="line">Back to Mr. “Didn’t Hear It.” If he missed the question, what else’ll he miss—sirens? It’s simple: Say yes to postponement, or say why, properly, with an alternative that doesn’t punt Nana into arrears.</p>
+
+        <div class="name">Frank</div>
+        <p class="line">And put it in writing: — eligibility, — interest rate, — how it ends when the house sells. One page. Two at most. I’ve seen shorter recipes for pavlova.</p>
+
+        <div class="name">Don</div>
+        <p class="line">And publish the hardship stats quarterly. If you won’t show your numbers, I’ll assume your heart’s behind a firewall.</p>
+
+        <div class="name">Ruru</div>
+        <p class="line poem">“Suit the action to the word, the word to the action.” A council that speaks of care yet counts in thorns is but a play with props and no compassion.</p>
+
+        <div class="name">Kahu</div>
+        <p class="line">System lens: — Rates relief reduces forced sales; — Document access lifts employment; — Manager discretion beats policy paralysis. Net effect: healthier households, lower downstream costs.</p>
+      </div>
+
+      <p class="aside scene">The barmaid yanks down the Chamber poster and replaces it with “Quiz Night—Teams of 5.” She winks.</p>
+
+      <div class="dialogue">
+        <div class="name">Mick</div>
+        <p class="line">All right, lads—pledges we’d demand if we were grilling them on stage:</p>
+
+        <div class="name">Frank</div>
+        <p class="line">One: Hardship Rates Postponement, codified, capped interest, plain-English letters. Two: Library &amp; Agency Access, emergency overrides for job-seekers—copy/scan/send regardless of card. Three: Response Time—forty-eight hours for a real reply, not “Seen.”</p>
+
+        <div class="name">Don</div>
+        <p class="line">Four: Public Dashboards—how many postponements, how many copies issued, how many jobs landed. Five: No more “didn’t hear the question.” If you missed it, own it, answer it, and put it in writing.</p>
+
+        <div class="name">Ruru</div>
+        <p class="line poem">Six: “Let mercy season justice.” For what is governance, if not the art of bending rules toward human good?</p>
+
+        <div class="name">Kahu</div>
+        <p class="line">Seven: Audit the stage, not just the staff. If you’ll corral 1400 workers to vote fourteen, you’d best open the mic to all twelve on the night—or livestream the lot and let the city judge.</p>
+      </div>
+
+      <p class="aside scene">A brief hush. Outside, the lake wind lifts and falls.</p>
+
+      <div class="dialogue">
+        <div class="name">Mick</div>
+        <p class="line">To the contenders who hear the question and help—ka pai. To the rest—get policies with a heartbeat, or get off the stage.</p>
+
+        <div class="name">Frank</div>
+        <p class="line">And someone fix the copier.</p>
+
+        <div class="name">Don</div>
+        <p class="line">And the dashboard.</p>
+
+        <div class="name">Ruru</div>
+        <p class="line">And the meter of thy speeches.</p>
+
+        <div class="name">Kahu</div>
+        <p class="line">And, gently, the system itself.</p>
+      </div>
+
+      <p class="scene">They clink glasses. The jukebox fades. Quiz Night begins. The five scribble “The Common Sense Party” on their answer sheet.</p>
+
+      <p class="meta"><em>Curtain.</em></p>
+    </section>
+
+    <footer>© The Rusty Anchor: Rates, Copies, and Common Sense</footer>
+  </div>
+</body>
+</html>
