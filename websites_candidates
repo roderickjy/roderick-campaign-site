@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NEWS REPORT — Community Forum Signals Shift in Local Politics</title>
+<meta name="description" content="A Frankton community forum drew candidates and residents, highlighting shifting alliances, calls for transparency, and renewed accountability ahead of local body elections." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Community Forum Signals Shift in Local Politics" />
+<meta property="og:description" content="Shifting alliances, transparency, and accountability took centre stage at a packed Frankton forum." />
+<meta property="og:locale" content="en_NZ" />
+
+<!-- Minimal, readable styles (drop if your site provides CSS) -->
+<style>
+:root { --fg:#111; --bg:#fff; --muted:#5b5b5b; --accent:#0b7285; }
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif}
+.wrap{max-width:72ch;margin:2rem auto;padding:0 1rem}
+header h1{font-size:2rem;line-height:1.2;margin:0 0 .25rem}
+.dek{font-size:1.1rem;color:var(--muted);margin:.25rem 0 1rem}
+.byline{color:var(--muted);font-size:.95rem;margin-bottom:2rem}
+.byline time{white-space:nowrap}
+h2{font-size:1.25rem;margin:1.5rem 0 .5rem}
+blockquote{border-left:.25rem solid var(--accent);margin:1rem 0;padding:.5rem 1rem;background:#f6f9fa}
+figure{margin:1.5rem 0}
+figcaption{color:var(--muted);font-size:.9rem}
+footer{margin:2rem 0;color:var(--muted);font-size:.9rem}
+.tag{display:inline-block;margin:.25rem .5rem .25rem 0;padding:.2rem .5rem;border:1px solid #e0e0e0;border-radius:999px;font-size:.8rem;color:#444}
+</style>
+
+<!-- Structured data (optional but good for SEO) -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"NewsArticle",
+"headline":"Community Forum Signals Shift in Local Politics",
+"datePublished":"2025-09-11",
+"dateModified":"2025-09-11",
+"author":{"@type":"Person","name":"Roderick J Young"},
+"articleSection":"Local Elections",
+"inLanguage":"en-NZ",
+"about":["Hamilton City Council","Local elections","Frankton community forum"],
+"keywords":["Hamilton","local body elections","Frankton","council candidates","community forum"],
+"locationCreated":"Frankton, Hamilton, New Zealand"
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+<header>
+<p class="overline">NEWS REPORT</p>
+<h1>Community Forum Signals Shift in Local Politics</h1>
+<p class="dek">Shifting alliances and renewed commitments to transparency took centre stage at a packed Frankton forum ahead of the local body elections.</p>
+<p class="byline">By <strong>Roderick J Young</strong> · <time datetime="2025-09-11">11 September 2025</time> · Frankton, Hamilton</p>
+</header>
+
+<article>
+<p>A vibrant political forum held last night drew a diverse crowd of residents, candidates, and community leaders, highlighting both shifting alliances and renewed commitments to public accountability in the lead-up to the local body elections. The event, hosted in Frankton, brought together mayoral and ward candidates, including several prominent names from current and previous councils. Notably absent were a few key figures who had previously signaled involvement, but their apologies cleared the stage for fresh dialogue among active candidates.</p>
+
+<h2>Emerging Alignment on Council</h2>
+<p>A notable highlight was the growing public cohesion between two previously factional councillors, now appearing in alignment on policy and approach. Their public unity was seen by many as a step forward for a council struggling with internal division in recent years.</p>
+
+<h2>Opening Exchange Sets the Tone</h2>
+<p>The forum opened with a strong address from <strong>Rachel Karalus</strong>, who responded to the evening’s first public question:</p>
+<blockquote>
+<p><em>“What qualities are most important in a deputy mayor?”</em></p>
+<p><strong>“Trust.”</strong></p>
+</blockquote>
+<p>Her response drew visible agreement from other candidates and set a night-long focus on transparency and community engagement.</p>
+
+<h2>Big Questions, Bigger Structures</h2>
+<p>Candidates discussed a range of pressing issues, from council transparency and fiscal responsibility to regional governance. One attendee asked whether current regional council boundaries could serve as the basis for administrative regions if New Zealand were to become a republic. While not all candidates addressed the question directly, the discussion reflected a growing public interest in larger structural reform.</p>
+
+<h2>Rates Pressure and Spending Scrutiny</h2>
+<p>Several speakers voiced empathy for sitting councillors navigating the current political turbulence, while others emphasised the need for a “line-by-line” review of council spending—particularly in the wake of increased rates pressure on residents and local businesses.</p>
+
+<h2>Regional Council: A Full House</h2>
+<p>A full lineup of regional council candidates was also present, offering voters a rare chance to hear from nearly the entire field of contenders for the upcoming election. With only four seats available, the crowded race will be closely watched.</p>
+
+<h2>Grassroots Signs & Youth Voices</h2>
+<p>Among the grassroots efforts noted during the evening was an independent candidate’s creative signage campaign using repurposed carpet squares placed at local businesses. The signs, brought in and out daily by store owners, reflect a low-cost, community-based approach to campaigning.</p>
+<p>Also making an impression were youth engagement initiatives. Three potential youth councillors—representing both Māori and English-speaking communities—were identified at the forum and in surrounding venues. Their presence signals growing youth interest in civic affairs and local leadership.</p>
+
+<h2>Beyond the Podium</h2>
+<p>Following the forum, candidates continued engaging with constituents in nearby venues, from local taverns to community spaces, showing an eagerness to connect beyond the podium.</p>
+
+<h2>Why It Matters</h2>
+<p>As campaign season intensifies, events like this one serve as a critical platform not only for policy discussion but also for rebuilding trust—both among candidates and between the council and the community it serves. The elections are set to bring a mix of continuity and change, and based on last night’s turnout, the electorate is paying close attention.</p>
+</article>
+
+<footer>
+<span class="tag">#Hamilton</span>
+<span class="tag">#LocalElections</span>
+<span class="tag">#Frankton</span>
+<span class="tag">#CommunityForum</span>
+</footer>
+</main>
+</body>
+</html>
