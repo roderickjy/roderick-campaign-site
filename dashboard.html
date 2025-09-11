@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hamilton Stabiliser Scorecard</title>
+<style>
+:root{
+--bg:#0b1020;
+--card:#111831;
+--ink:#e6ecf5;
+--muted:#9fb0c7;
+--accent:#7dd3fc;
+--good:#34d399;
+--warn:#fbbf24;
+--bad:#fb7185;
+--max:1000px;
+--radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:linear-gradient(180deg,#0b1020,#0f1530 60%,#0b1020);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{padding:2.5rem 1rem 1.25rem;border-bottom:1px solid rgba(255,255,255,.06)}
+h1{margin:0 auto;max-width:var(--max);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:.2px}
+h1 span{background:linear-gradient(90deg,#60a5fa,#7dd3fc,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:var(--max);margin:.75rem auto 0;color:var(--muted)}
+main{max-width:var(--max);margin:1.25rem auto;padding:0 1rem 2rem}
+.panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:1rem}
+.stack{display:grid;gap:1rem}
+.controls{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+.chip{display:inline-flex;gap:.5rem;align-items:center;padding:.4rem .7rem;border-radius:999px;background:#0a1026;border:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:.9rem}
+.chip b{color:var(--ink)}
+.actions{display:flex;gap:.5rem;flex-wrap:wrap}
+button{background:#0a1228;color:var(--ink);border:1px solid rgba(255,255,255,.12);padding:.55rem .8rem;border-radius:10px;cursor:pointer}
+button:hover{border-color:rgba(255,255,255,.28)}
+table{width:100%;border-collapse:separate;border-spacing:0}
+thead th{position:sticky;top:0;background:linear-gradient(180deg,#0f1735,#101939);z-index:1}
+th,td{padding:.7rem .6rem;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
+th{font-weight:700;text-align:left;color:#d6e2f3}
+tbody tr:hover{background:rgba(255,255,255,.03)}
+.name{display:flex;align-items:center;gap:.6rem;font-weight:650}
+.role{color:var(--muted);font-size:.92rem}
+.score{font-weight:800}
+.score.bad{color:var(--bad)} .score.warn{color:var(--warn)} .score.good{color:var(--good)}
+.bar{height:8px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#60a5fa,#7dd3fc)}
+.slider{width:min(220px,30vw)}
+.muted{color:var(--muted)}
+.pill{padding:.2rem .5rem;border-radius:999px;border:1px solid rgba(255,255,255,.14);font-size:.82rem;color:#b9cae3}
+tfoot td{border-bottom:0;padding-top:1rem}
+.note{margin-top:.5rem;color:#9fb0c7;font-size:.92rem}
+.foot{max-width:var(--max);margin:0 auto 2rem;color:#91a6c7;opacity:.9;padding:0 1rem}
+.kbd{border:1px solid rgba(255,255,255,.2);border-bottom-color:rgba(255,255,255,.35);background:#0a1228;padding:.1rem .35rem;border-radius:6px}
+@media (max-width:720px){
+.role{display:none}
+.slider{width:140px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1><span>Hamilton</span> – Stabiliser Scorecard (Downturn → Restructuring)</h1>
+<p class="lead">Interactive slate based on a “stabiliser fit” out of 100 (finance discipline, delivery, coalition, Treaty partnership, transparency). Use sliders to tweak, and tick the people you’d seat to reach a reliable majority.</p>
+</header>
+
+<main class="stack">
+
+<section class="panel">
+<div class="controls">
+<div class="actions">
+<button id="sortScore">Sort by score ↓</button>
+<button id="sortName">Sort by name A–Z</button>
+<button id="reset">Reset scores</button>
+<button id="copyCsv">Copy CSV</button>
+</div>
+<div class="chip"><b>Selected:</b>&nbsp;<span id="selCount">0</span></div>
+<div class="chip"><b>Avg score:</b>&nbsp;<span id="avgScore">–</span></div>
+<div class="chip"><b>Target votes:</b>&nbsp;8–10</div>
+</div>
+
+<div class="note">Tip: Press <span class="kbd">S</span> to sort by score, <span class="kbd">N</span> to sort by name.</div>
+
+<div style="overflow:auto;margin-top:.5rem">
+<table id="grid" aria-label="Candidate score table">
+<thead>
+<tr>
+<th style="width:36px">In</th>
+<th>Candidate</th>
+<th class="role">Suggested role</th>
+<th style="width:90px">Score</th>
+<th style="width:180px">Adjust</th>
+<th>Why they help now</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tfoot>
+<tr><td colspan="6" class="muted">
+Baseline scores reflect Hamilton’s current place on the cycle (late downturn &rarr; restructuring).
+Green ≈ strong stabiliser; amber ≈ usable with caveats; red ≈ poor fit for this phase.
+</td></tr>
+</tfoot>
+</table>
+</div>
+</section>
+
+</main>
+
+<section class="foot">
+<p><strong>Method:</strong> 20% Fiscal &amp; Debt, 20% Infrastructure Delivery, 15% Housing &amp; Growth, 15% Governance &amp; Integrity, 10% Treaty/Partnerships, 10% Economic Development, 5% Risk, 5% Temperament.</p>
+<p class="muted">Note: You asked to include <em>Tim</em> and <em>Sarah</em>. Both are shown in the slate and, at baseline, they “make it”. Adjust as you see fit.</p>
+</section>
+
+<script>
+// --- Data -------------------------------------------------------------
+const baseline = [
+{name:"Rachel Karalus", score:86, role:"Mayor", why:"Governance & risk lens; prioritises delivery and trust rebuild."},
+{name:"Dave Taylor", score:82, role:"Deputy Mayor / Infrastructure & Transport", why:"Infrastructure-first pragmatist; focuses on fewer, bigger, better."},
+{name:"Sarah Thomson", score:81, role:"Climate/Water & Governance", why:"Evidence-driven; strong on transparent process and water/climate."},
+{name:"Maria Huata", score:78, role:"Community & Partnerships / Māori Outcomes", why:"Bridge-builder; lifts Treaty partnership and mandate."},
+{name:"Sue Moroney", score:77, role:"Transport & External Funding", why:"Results-focused advocate; helps win co-funding and keep budgets tight."},
+{name:"Jackie Talbot", score:76, role:"Finance & Performance / Audit & Risk", why:"Governance craft; strengthens execution, assurance, and open-book reporting."},
+{name:"Roderick Young", score:75, role:"Finance & Performance (Deputy) / Economic Development", why:"Rates relief + open dashboards; numbers-driven coalition-builder."},
+{name:"Angela O’Leary", score:74, role:"Community & Services / Audit & Risk", why:"Steady hand on core services; consensus-focused."},
+{name:"Tim Macindoe", score:73, role:"Finance / External Relations", why:"Fiscal conservative; adds discipline and relationship reach."},
+{name:"Lawrence Jensen", score:72, role:"Social Wellbeing & Safety", why:"Grass-roots connector; supports equitable resets."},
+{name:"Mesh Macdonald", score:70, role:"Procurement & Cost-Down Taskforce", why:"Value-for-money pressure; checks scope creep."},
+{name:"Graeme Mead", score:68, role:"Audit & Risk / Major Projects Oversight", why:"Watchdog energy; useful if channelled into KPIs and tracking."},
+{name:"Rudi du Plooy", score:66, role:"Rates & Revenue", why:"Rates hawk; can back a tight repair budget."},
+{name:"Andrew Bydder", score:62, role:"Cost-Down / Fees & Consenting Simplification", why:"Cost-first stance; needs coalition discipline to avoid gridlock."},
+{name:"John Macdonald", score:60, role:"Performance & Assurance", why:"Transparency push; lighter on delivery programme detail."},
+{name:"Roma Tupaea-Warren", score:55, role:"Long-Range Policy", why:"Big-vision ideas; high execution risk in retrenchment."},
+{name:"Jack Gielen", score:45, role:"Public Forum / Advocacy", why:"Activist framing; low fit for stabiliser phase now."}
+];
+
+let rows = JSON.parse(JSON.stringify(baseline));
+const tbody = document.querySelector("#grid tbody");
+const selCount = document.getElementById("selCount");
+const avgScore = document.getElementById("avgScore");
+
+function scoreClass(v){
+if(v>=78) return "score good"
+if(v>=60) return "score warn"
+return "score bad"
+}
+
+function render(){
+tbody.innerHTML = ""
+rows.forEach((r,i)=>{
+const tr = document.createElement("tr");
+
+// Include checkbox
+const tdIn = document.createElement("td");
+const cb = document.createElement("input");
+cb.type = "checkbox"
+cb.ariaLabel = `Select ${r.name}`;
+cb.checked = !!r.in;
+cb.addEventListener("change", ()=>{ r.in = cb.checked; updateSummary(); });
+tdIn.appendChild(cb);
+
+// Name
+const tdName = document.createElement("td");
+tdName.innerHTML = `<div class="name">${r.name}</div>`;
+
+// Role
+const tdRole = document.createElement("td");
+tdRole.className = "role"
+tdRole.innerHTML = `<span class="pill">${r.role||""}</span>`;
+
+// Score + bar
+const tdScore = document.createElement("td");
+tdScore.innerHTML = `<div class="${scoreClass(r.score)}">${r.score}</div>
+<div class="bar" aria-hidden="true"><i style="width:${Math.max(0,Math.min(100,r.score))}%"></i></div>`;
+
+// Slider
+const tdSlide = document.createElement("td");
+tdSlide.innerHTML = `<input class="slider" type="range" min="0" max="100" value="${r.score}" aria-label="Adjust score for ${r.name}">`;
+tdSlide.querySelector("input").addEventListener("input", (e)=>{
+r.score = +e.target.value;
+render(); // re-render row to update color/bar/number
+updateSummary();
+});
+
+// Why
+const tdWhy = document.createElement("td");
+tdWhy.className = "muted"
+tdWhy.textContent = r.why || ""
+
+tr.append(tdIn, tdName, tdRole, tdScore, tdSlide, tdWhy);
+tbody.appendChild(tr);
+});
+updateSummary();
+}
+
+function updateSummary(){
+const selected = rows.filter(r=>r.in);
+selCount.textContent = selected.length;
+if(selected.length){
+const avg = selected.reduce((a,b)=>a+b.score,0)/selected.length;
+avgScore.textContent = Math.round(avg);
+} else {
+avgScore.textContent = "–"
+}
+}
+
+function sortByScore(){
+rows.sort((a,b)=>b.score-a.score || a.name.localeCompare(b.name));
+render();
+}
+function sortByName(){
+rows.sort((a,b)=>a.name.localeCompare(b.name));
+render();
+}
+function reset(){
+rows = JSON.parse(JSON.stringify(baseline));
+render();
+}
+function copyCSV(){
+const header = ["In","Candidate","Score","Role","Why"];
+const lines = rows.map(r=>[
+r.in?"yes":"no",
+r.name,
+r.score,
+`"${(r.role||"").replace(/"/g,'""')}"`,
+`"${(r.why||"").replace(/"/g,'""')}"`
+].join(","));
+const csv = [header.join(","), ...lines].join("\n");
+navigator.clipboard.writeText(csv).then(()=>{
+alert("CSV copied to clipboard.");
+},()=>alert("Copy failed – your browser may block clipboard access."));
+}
+
+document.getElementById("sortScore").addEventListener("click", sortByScore);
+document.getElementById("sortName").addEventListener("click", sortByName);
+document.getElementById("reset").addEventListener("click", reset);
+document.getElementById("copyCsv").addEventListener("click", copyCSV);
+document.addEventListener("keydown",(e)=>{
+if(e.key.toLowerCase()==="s") sortByScore();
+if(e.key.toLowerCase()==="n") sortByName();
+});
+
+// Initial render
+sortByScore();
+</script>
+
+</body>
+</html>
