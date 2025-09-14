@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roderick J. Young — Hamilton West</title>
+<meta name="description" content="Roderick J. Young for Hamilton West. Straightforward plans for fair rates, safer streets, more homes, and a Hamilton-owned community bank.">
+<style>
+/* One font size across the page; headings use weight/spacing only */
+:root { --fg:#111; --bg:#fff; --muted:#666; --accent:#0b6; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+font-size: 18px; /* single size */
+line-height: 1.55;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 20px; }
+header, nav, main, footer { margin: 0 auto; }
+header { padding: 10px 0 16px; border-bottom: 2px solid #eaeaea; }
+.title { font-weight: 800; letter-spacing: 0.3px; }
+.kicker { color: var(--muted); font-style: italic; }
+nav { padding: 10px 0; border-bottom: 1px solid #eee; }
+nav a {
+display: inline-block; margin-right: 14px; text-decoration: none;
+border-bottom: 2px solid transparent; padding-bottom: 2px; color: var(--fg);
+}
+nav a:hover, nav a:focus { border-color: var(--accent); outline: none; }
+/* Headings keep same size; use weight, caps, rules to separate sections */
+h2, h3 { font-size: 1em; font-weight: 800; margin: 22px 0 8px; letter-spacing: 0.3px; }
+h2 { padding-top: 8px; border-top: 2px solid #eaeaea; }
+p { margin: 10px 0; }
+ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+li { margin: 6px 0; }
+.note { color: var(--muted); }
+.tag { display:inline-block; padding:2px 8px; border:1px solid #ddd; border-radius:999px; margin-right:6px; }
+.cta {
+display:inline-block; padding:10px 14px; border:1px solid var(--accent);
+text-decoration:none; border-radius:6px; margin:6px 6px 0 0;
+}
+.cta:hover, .cta:focus { background: #f2fff8; outline: none; }
+.box {
+border:1px solid #eee; border-radius:8px; padding:12px; background:#fafafa; margin: 12px 0;
+}
+footer { margin: 28px 0 12px; border-top: 2px solid #eaeaea; padding-top: 12px; font-size: 0.95em; color: var(--muted); }
+.sr-only { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="wrap">
+<header>
+<div class="title">Roderick J. Young — Hamilton West</div>
+<div class="kicker">Simple plans. Clear costs. Do the basics well.</div>
+</header>
+
+<nav aria-label="Main">
+<a href="#why">Why I’m running</a>
+<a href="#for-you">What it means for you</a>
+<a href="#priorities">Priorities</a>
+<a href="#bank">Hamilton Bank</a>
+<a href="#vote">How to vote</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+<section id="why">
+<h2>Why I’m running</h2>
+<p>Hamilton is paying more and getting less. Rates keep rising while core services fall behind. We can fix this with straight answers, clear budgets, and steady work.</p>
+<p>My focus is basics first: water, roads, safety, and fair council costs. Big plans are fine, but only after we get the basics right.</p>
+</section>
+
+<section id="for-you">
+<h2>What it means for you</h2>
+<ul>
+<li><strong>Fair rates:</strong> Slow the growth of rates by cutting waste and phasing projects.</li>
+<li><strong>Safer streets:</strong> More street lighting, smart policing support, and fast fixes for hotspots.</li>
+<li><strong>More homes:</strong> Open up sensible land, speed up consents, and cut red tape that adds cost.</li>
+<li><strong>Plain English council:</strong> Short reports, clear costs, and open books you can read in minutes.</li>
+<li><strong>Local money stays local:</strong> A Hamilton community bank to keep interest here working for us.</li>
+</ul>
+</section>
+
+<section id="priorities">
+<h2>Priorities</h2>
+
+<h3>1) Fair rates and real value</h3>
+<ul>
+<li>Publish a simple budget dashboard: what we spend, what we cut, and why.</li>
+<li>Review every project. Pause low-value work. Fund only what helps most people.</li>
+<li>Expand hardship help so people are not forced out of their homes.</li>
+</ul>
+
+<h3>2) Safer streets</h3>
+<ul>
+<li>Fix dark spots first. Replace broken lights and trim overgrowth on key routes.</li>
+<li>Target high-risk areas with police support and smart cameras that protect privacy.</li>
+<li>Design streets that slow cars where people live, walk, and bike.</li>
+</ul>
+
+<h3>3) More homes people can afford</h3>
+<ul>
+<li>Speed up consents with clear checklists and time limits.</li>
+<li>Unlock small, well-planned subdivisions near services and jobs.</li>
+<li>Post clear, low-cost standard plans to cut design time and fees.</li>
+</ul>
+
+<h3>4) Open LIMs and faster answers</h3>
+<ul>
+<li>Make LIMs easy to read and cheaper to get.</li>
+<li>Publish basic site info online for free: flood, pipes, heritage, and consents.</li>
+<li>Give people a single point of contact to avoid run-around.</li>
+</ul>
+</section>
+
+<section id="bank">
+<h2>Hamilton Bank (Community-Owned)</h2>
+<p>This is a simple, local bank model. It keeps more interest payments in Hamilton and uses profits to lower rates and fund basics.</p>
+
+<div class="box">
+<h3>How it works</h3>
+<ol>
+<li><strong>Local deposits:</strong> People and groups can save with the bank.</li>
+<li><strong>Local lending:</strong> Offer plain home loans and safe council-backed projects.</li>
+<li><strong>Low overheads:</strong> Digital first, small team, strong risk rules.</li>
+<li><strong>Profits stay here:</strong> Profits reduce council debt and support core services.</li>
+</ol>
+</div>
+
+<div class="box">
+<h3>Safeguards</h3>
+<ul>
+<li>Independent board and strict lending rules.</li>
+<li>Transparent reports in plain English every quarter.</li>
+<li>Step-by-step build: start small, prove the model, then grow.</li>
+</ul>
+</div>
+
+<p><strong>Bottom line:</strong> Keep local money working for local people. Lower risk. Clear books. No tricks.</p>
+</section>
+
+<section id="vote">
+<h2>How to vote (STV, postal)</h2>
+<ul>
+<li>Rank candidates 1, 2, 3… in the order you like them.</li>
+<li>Do not repeat or skip numbers. If you make a mistake, fix it with a single line and write the correct number.</li>
+<li>Post or drop your vote in on time. Check council dates for your area.</li>
+</ul>
+<a class="cta" href="https://www.hamilton.govt.nz/" target="_blank" rel="noopener">Check voting info</a>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:roderickjyoung.nz@gmail.com">roderickjyoung.nz@gmail.com</a></p>
+<p>Website: <a href="https://roderickjy.github.io/roderick-campaign-site/" target="_blank" rel="noopener">Campaign site</a></p>
+<p class="note">Last updated: 15 September 2025</p>
+</section>
+</main>
+
+<footer>
+Authorised by R. J. Young, Hamilton West. Plain English. One font size. No fluff.
+</footer>
+</div>
+</body>
+</html>
