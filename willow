@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roderick J. Young — Hamilton West (One-Page)</title>
+<meta name="description" content="A simple, panui-style one-page for the Hamilton West campaign — plain language, one font size, no fluff.">
+<style>
+/* Plain style: one font size, simple layout, left-aligned bullets */
+:root {
+--fg:#111; --bg:#fff; --muted:#666; --soft:#f7f7f7; --rule:#eaeaea; --accent:#0a7a57;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+font-size: 18px; /* single size everywhere */
+line-height: 1.55;
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 20px; }
+header { padding: 10px 0 16px; border-bottom: 2px solid var(--rule); }
+h1, h2, h3 { font-size: 1em; font-weight: 800; letter-spacing: .2px; margin: 20px 0 8px; }
+h1 { margin-top: 0; }
+p { margin: 10px 0; }
+.kicker { color: var(--muted); font-style: italic; }
+nav { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+nav a {
+display: inline-block; margin: 0 14px 6px 0; text-decoration: none; color: var(--fg);
+border-bottom: 2px solid transparent; padding-bottom: 2px;
+}
+nav a:hover, nav a:focus { border-color: var(--accent); outline: none; }
+section { padding: 10px 0; }
+.rule { border-top: 2px solid var(--rule); padding-top: 10px; margin-top: 20px; }
+.panui {
+background: var(--soft); border: 1px solid var(--rule); border-radius: 8px; padding: 14px; margin: 14px 0;
+}
+blockquote {
+margin: 12px 0; padding: 12px 14px; background: var(--soft);
+border-left: 4px solid var(--accent);
+}
+blockquote footer { color: var(--muted); margin-top: 6px; }
+ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+li { margin: 6px 0; }
+.grid {
+display: grid; grid-template-columns: 1fr; gap: 12px;
+}
+.card {
+border: 1px solid var(--rule); border-radius: 8px; padding: 12px; background: #fff;
+}
+.muted { color: var(--muted); }
+.badge { display:inline-block; border:1px solid var(--rule); border-radius:999px; padding:2px 8px; margin-right:6px; }
+.cta {
+display:inline-block; padding:10px 14px; border:1px solid var(--accent);
+border-radius:6px; text-decoration:none; margin:6px 10px 0 0;
+}
+.cta:hover, .cta:focus { background:#effdf7; outline:none; }
+footer { margin: 28px 0 12px; border-top:2px solid var(--rule); padding-top:12px; color: var(--muted); }
+.sr-only { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="wrap">
+
+<!-- Header -->
+<header>
+<h1>Alláh-u-Abhá — Dear friends and neighbours,</h1>
+<p class="kicker">Welcome to a simple pānui-style page for the Hamilton West campaign. Plain words. Clear costs. Do the basics well.</p>
+</header>
+
+<!-- Nav -->
+<nav aria-label="Main">
+<a href="#panui">Pānui</a>
+<a href="#what-it-means">What it means for you</a>
+<a href="#priorities">Priorities</a>
+<a href="#bank">Hamilton Bank</a>
+<a href="#how-to-vote">How to vote (STV)</a>
+<a href="#news">News & updates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+<!-- Panui / Intro -->
+<section id="panui" class="rule">
+<div class="panui">
+<p><strong>Pānui (Notice):</strong> This one-page gathers everything from the original site in a calm, easy-to-read format. No plays, no long asides. Just what’s needed to help you decide your vote.</p>
+<blockquote>
+<p>“O ye lovers of God! Make firm your steps; fulfil your pledge to one another; go forth in harmony to scatter abroad the sweet savours of God’s love, and to establish His Teachings, until ye breathe a soul into the dead body of this world, and bring true healing in the physical and spiritual realms to everyone who aileth.”</p>
+<footer>— ‘Abdu’l-Bahá</footer>
+</blockquote>
+</div>
+
+<p><strong>Why I’m running:</strong> Rates are rising faster than value. Core services—water, roads, safety—must come first. Let’s fix the basics, be honest about costs, and keep local money working for local people.</p>
+</section>
+
+<!-- What it Means for You -->
+<section id="what-it-means" class="rule">
+<h2>What it means for you</h2>
+<ul>
+<li><strong>Fair rates:</strong> Slow the growth of rates by cutting low-value spending and phasing projects sensibly.</li>
+<li><strong>Safer streets:</strong> Better lighting, quicker fixes for hotspots, and design that protects people.</li>
+<li><strong>More homes:</strong> Faster consents, small smart subdivisions, and simple standard plans to cut costs.</li>
+<li><strong>Plain English council:</strong> Short reports, clear budgets, open books you can read in minutes.</li>
+<li><strong>Local money stays local:</strong> A community-owned Hamilton Bank to keep interest here supporting basics.</li>
+</ul>
+</section>
+
+<!-- Priorities -->
+<section id="priorities" class="rule">
+<h2>Priorities</h2>
+
+<div class="grid">
+<div class="card">
+<h3>1) Fair rates & real value</h3>
+<ul>
+<li>Simple budget dashboard: what we spend, what we pause, and why.</li>
+<li>Review all projects; fund those that help the most people soonest.</li>
+<li>Strong hardship help so people can stay in their homes.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>2) Safer streets</h3>
+<ul>
+<li>Fix dark spots first; replace broken lights and tidy overgrowth.</li>
+<li>Target high-risk areas with police support and privacy-respecting cameras.</li>
+<li>Design calm streets where people live, walk, and bike.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>3) More homes people can afford</h3>
+<ul>
+<li>Clear checklists and time limits for consents.</li>
+<li>Unlock small, well-served areas close to jobs and services.</li>
+<li>Publish low-cost standard house plans to speed builds.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>4) Open LIMs & faster answers</h3>
+<ul>
+<li>Make LIMs cheaper and easier to read.</li>
+<li>Free map layers online: flood, pipes, heritage, consents.</li>
+<li>One point of contact for your case—no run-around.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Hamilton Bank -->
+<section id="bank" class="rule">
+<h2>Hamilton Bank (community-owned)</h2>
+<p>This is a simple local bank model. It keeps more interest payments in Hamilton and uses profits to lower debt and fund basics.</p>
+
+<div class="grid">
+<div class="card">
+<h3>How it works</h3>
+<ol>
+<li><strong>Local deposits:</strong> People and groups can save with the bank.</li>
+<li><strong>Local lending:</strong> Plain home loans and safe, council-backed projects.</li>
+<li><strong>Low overheads:</strong> Digital-first, small team, strong risk rules.</li>
+<li><strong>Profits stay here:</strong> Lower council debt and support water, roads, libraries.</li>
+</ol>
+</div>
+
+<div class="card">
+<h3>Safeguards</h3>
+<ul>
+<li>Independent board and strict lending standards.</li>
+<li>Quarterly reports in plain English.</li>
+<li>Step-by-step build: start small, prove the model, grow carefully.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Why it matters</h3>
+<ul>
+<li>More of our money works for Hamilton instead of leaving town.</li>
+<li>Lower borrowing costs over time with steady discipline.</li>
+<li>Transparent books you can actually read.</li>
+</ul>
+</div>
+</div>
+
+<p class="muted">Bottom line: keep local money working for local people. Clear rules. No tricks.</p>
+</section>
+
+<!-- How to Vote -->
+<section id="how-to-vote" class="rule">
+<h2>How to vote (STV, postal)</h2>
+<ul>
+<li>Rank candidates 1, 2, 3… in your true order.</li>
+<li>Do not repeat or skip numbers. If you make a mistake, cross it once and write the correct number.</li>
+<li>Post or drop your vote in on time. Check council dates for Hamilton.</li>
+</ul>
+<a class="cta" href="https://www.hamilton.govt.nz/" target="_blank" rel="noopener">Check voting info</a>
+</section>
+
+<!-- News & Updates -->
+<section id="news" class="rule">
+<h2>News & updates</h2>
+<div class="grid">
+<div class="card">
+<h3>This week</h3>
+<ul>
+<li>Meet-the-candidates sessions across the city—come say kia ora.</li>
+<li>Budget dashboard draft published in plain language.</li>
+<li>Street-lighting fix list sent to staff for top-10 hotspots.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Coming up</h3>
+<ul>
+<li>Short explainer on STV with clear examples.</li>
+<li>‘Basics First’ works plan for water and roads.</li>
+<li>Open template: low-cost standard house plans.</li>
+</ul>
+</div>
+</div>
+<p class="muted">Simple updates, no spin. If it’s not ready, we won’t pretend it is.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="rule">
+<h2>Contact</h2>
+<p><span class="badge">Email</span> <a href="mailto:roderickjyoung.nz@gmail.com">roderickjyoung.nz@gmail.com</a></p>
+<p><span class="badge">Website</span> <a href="https://roderickjy.github.io/roderick-campaign-site/" target="_blank" rel="noopener">Campaign site</a></p>
+<p class="muted">Last updated: 15 September 2025</p>
+
+<blockquote>
+<p>With loving greetings and a commitment to service—let’s work together for a kinder, safer, better-run Hamilton.</p>
+</blockquote>
+</section>
+</main>
+
+<footer>
+Authorised by R. J. Young, Hamilton West. One font size. Plain English. Pānui style.
+</footer>
+</div>
+</body>
+</html>
