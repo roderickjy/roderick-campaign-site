@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roderick John Young — Hamilton West | Brochure</title>
+<style>
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#111;background:#fff}
+header{padding:24px 16px;border-bottom:1px solid #e9e9ec}
+main{max-width:860px;margin:0 auto;padding:24px 16px}
+h1{margin:0 0 8px 0;font-size:28px;line-height:1.2}
+.lead{font-size:18px;line-height:1.5;color:#222;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
+.card{border:1px solid #e9e9ec;padding:16px}
+.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 16px;border-radius:4px}
+.muted{color:#444}
+footer{border-top:1px solid #e9e9ec;padding:16px;color:#444;font-size:14px;line-height:1.6}
+ul{margin:8px 0 0 18px}
+</style></head>
+<body>
+<header>
+  <h1>Roderick John Young — Hamilton West</h1>
+  <p class="lead">Fair rates · Safer streets · Affordable subdivisions · Transparent LIMs · Responsible spending</p>
+</header>
+<main class="grid">
+  <section class="card">
+    <h2>Read the brochure</h2>
+    <p class="muted">A single page you can print and fold into thirds (A4 landscape, double-sided).</p>
+    <p><a class="btn" href="roderick_tri_fold_BW_ROTATED_PHOTOS_v4.pdf">Download the tri-fold (PDF)</a></p>
+    <p class="muted" style="font-size:14px">Questions? <a href="mailto:roderickjy@gmail.com">roderickjy@gmail.com</a>.</p>
+  </section>
+  <section class="card">
+    <h2>My plan at a glance</h2>
+    <ul>
+      <li><strong>Fair rates</strong> and <strong>responsible spending</strong> on essentials (water, roads, parks, libraries).</li>
+      <li><strong>Affordable subdivisions</strong> and faster, clearer consents.</li>
+      <li><strong>Transparent LIMs</strong> — easier and cheaper to buy/sell.</li>
+      <li><strong>Safer streets</strong> where harm actually happens.</li>
+      <li><strong>Value-for-money procurement</strong> that lets local <strong>small and medium-sized enterprises</strong> bid.</li>
+    </ul>
+    <p class="muted">Postal voting: Tue 9 Sep – Sat 11 Oct 2025 (closes 12:00 pm). Hamilton uses STV — rank the candidates you support.</p>
+  </section>
+</main>
+<footer>
+  Promoted by <strong>Roderick J. Young</strong>, roderickjy@gmail.com · Contact: <a href="mailto:roderickjy@gmail.com">roderickjy@gmail.com</a>
+</footer>
+</body></html>
